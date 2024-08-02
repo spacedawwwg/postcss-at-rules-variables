@@ -1,9 +1,16 @@
-# postcss-at-rules-variables <a href="https://github.com/postcss/postcss"><img align="left" height="49" title="PostCSS" src="http://postcss.github.io/postcss/logo.svg"></a>
+<a href="https://github.com/postcss/postcss">
+<img height="49" title="PostCSS" src="https://api.postcss.org/logo.svg">
+</a>
+
+# postcss-at-rules-variables-2
+
 > [PostCSS](https://github.com/postcss/postcss) plugin to transform [W3C CSS Custom Properties](http://www.w3.org/TR/css-variables/) for at-rule’s parameters.
 
-[![Travis Build Status](https://img.shields.io/travis/Scrum/postcss-at-rules-variables/master.svg?style=flat-square&label=unix)](https://travis-ci.org/Scrum/postcss-at-rules-variables)[![AppVeyor Build Status](https://img.shields.io/appveyor/ci/GitScrum/postcss-at-rules-variables/master.svg?style=flat-square&label=windows)](https://ci.appveyor.com/project/GitScrum/postcss-at-rules-variables)[![node](https://img.shields.io/node/v/postcss-at-rules-variables.svg?style=flat-square)]()[![npm version](https://img.shields.io/npm/v/postcss-at-rules-variables.svg?style=flat-square)](https://www.npmjs.com/package/postcss-at-rules-variables)[![Dependency Status](https://david-dm.org/Scrum/postcss-at-rules-variables.svg?style=flat-square)](https://david-dm.org/Scrum/postcss-at-rules-variables)[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square)](https://github.com/xojs/xo)[![Coveralls status](https://img.shields.io/coveralls/Scrum/postcss-at-rules-variables.svg?style=flat-square)](https://coveralls.io/r/Scrum/postcss-at-rules-variables)
+A maintained fork of [postcss-at-rules-variables](https://github.com/Scrum/postcss-at-rules-variables)
 
-[![npm downloads](https://img.shields.io/npm/dm/postcss-at-rules-variables.svg?style=flat-square)](https://www.npmjs.com/package/postcss-at-rules-variables)[![npm](https://img.shields.io/npm/dt/postcss-at-rules-variables.svg?style=flat-square)](https://www.npmjs.com/package/postcss-at-rules-variables)[![Package Quality](http://npm.packagequality.com/shield/postcss-at-rules-variables.svg?style=flat-square)](http://packagequality.com/#?package=postcss-at-rules-variables)
+[![node](https://img.shields.io/node/v/postcss-at-rules-variables-2.svg?style=flat-square)]()[![npm version](https://img.shields.io/npm/v/postcss-at-rules-variables-2.svg?style=flat-square)](https://www.npmjs.com/package/postcss-at-rules-variables-2)
+
+[![npm downloads](https://img.shields.io/npm/dm/postcss-at-rules-variables-2.svg?style=flat-square)](https://www.npmjs.com/package/postcss-at-rules-variables-2)[![npm](https://img.shields.io/npm/dt/postcss-at-rules-variables-2.svg?style=flat-square)](https://www.npmjs.com/package/postcss-at-rules-variables-2)
 
 
 ## Why?
@@ -13,10 +20,13 @@ Adds the ability to use a custom property in the options, at-rules.
 ## Install
 
 ```bash
-$ npm install --save-dev postcss postcss-at-rules-variables
+$ npm install --save-dev postcss postcss-at-rules-variables-2
+```
+```bash
+$ pnpm install --save-dev postcss postcss-at-rules-variables-2
 ```
 
-> **Note:** This project is compatible with node v10+
+> **Note:** This project is compatible with node v20+
 
 ## Usage
 
@@ -148,19 +158,19 @@ h2 {
 
 ## Options
 
-#### `atRules`
+### `atRules`
 
 Type: `Array`  
 Default: `['for', 'if', 'else', 'each', 'mixin', 'custom-media']`  
 Description: *The array used in all at-rules in your project*
 
-#### `variables`
+### `variables`
 
 Type: `Object`  
 Default: `{}`  
 Description: *Allows you to pass an object of variables for `:root`. These definitions will override any that exist in the CSS*
 
-#### `declarationByWalk`
+### `declarationByWalk`
 
 Type: `boolean`  
 Default: `false`  

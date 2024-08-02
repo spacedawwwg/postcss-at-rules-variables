@@ -31,7 +31,7 @@ function getProperty(nodes) {
   return propertys;
 }
 
-module.exports = (options = {}) => {
+export default (options = {}) => {
   options = {
     atRules: [...new Set(['for', 'if', 'else', 'each', 'mixin', 'custom-media', ...options.atRules || ''])],
     variables: {...options.variables},
@@ -66,4 +66,4 @@ module.exports = (options = {}) => {
   };
 };
 
-module.exports.postcss = true;
+export const postcss = true;
